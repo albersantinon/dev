@@ -61,7 +61,6 @@ def main():
 
     # exporting the dataframe to a csv
     df_final.to_csv('file.csv', index=False)
-    print(df_final.to_string())
 
 
 main()
