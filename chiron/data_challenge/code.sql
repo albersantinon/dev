@@ -74,9 +74,23 @@ COPY TRIPS.TRIPS FROM '/tmp/data/trips.csv' WITH CSV HEADER DELIMITER ',';
 COPY TRIPS.URBANIZATION_LEVEL FROM '/tmp/data/urbanization_level.csv' WITH CSV HEADER DELIMITER ';';
 
 
+--
+-- FIRST ANSWER
+--
 
+with base as (
+SELECT tr.*, tm.motive, td.mode, ul.level_urbanization, substring(periods,1,4) as years
+FROM trips.trips tr
+join trips.travel_motives tm on (tr.travel_motives = tm.code)
+join trips.travel_mode td on (tr.travel_mode = td.code)
+join trips.region re on (tr.region_characteristics = re.code)
+join trips.urbanization_level ul on (re.region = ul.provinces)
+where motive like '%groceries%')
 
-
+select years, mode, level_urbanization, count(*)
+from base
+group by mode, level_urbanization, years
+order by 1,4
 
 
 
