@@ -1,0 +1,21 @@
+# For more information on how to configure this file, please see:
+# https://docs.getdbt.com/docs/profile
+
+default:
+  outputs:
+    prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'accelins-hire') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'default_wh') }}"
+      database: analytics
+      schema: "{{ env_var('SNOWFLAKE_USER') }}"
+      threads: 4
+      client_session_keep_alive: False
+      reuse_connections: True
+  target: prod
+
+config:
+  send_anonymous_usage_stats: False

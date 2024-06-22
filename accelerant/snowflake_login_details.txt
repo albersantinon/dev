@@ -1,0 +1,10 @@
+The Accelerant Snowflake tenant can be accessed at https://app.snowflake.com/accelins/hire/, you'll need to login to the tenant to change your password before you can run dbt.
+
+Temporary User Info:
+   Username: albertosantinon7
+   Role: albertosantinon7_role
+   Email: albertosantinon7@gmail.com
+   First Name: Alberto
+   Last Name: Santinon
+   Password: DqvT3oLuicPg8eXq
+   Days to Expiry: 7
