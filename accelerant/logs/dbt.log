@@ -1,0 +1,70 @@
+
+
+============================== 16:57:06.934272 | 3aecea3d-418b-4ae6-ab32-a9d9a4b08e6b ==============================
+[0m16:57:06.934272 [info ] [MainThread]: Running with dbt=1.8.3
+[0m16:57:06.934939 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/albertosantinon/Documents/dev/accelerant', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/albertosantinon/Documents/dev/accelerant/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m16:57:06.941765 [info ] [MainThread]: dbt version: 1.8.3
+[0m16:57:06.942025 [info ] [MainThread]: python version: 3.12.1
+[0m16:57:06.942173 [info ] [MainThread]: python path: /Users/albertosantinon/Documents/dev/.venv/bin/python
+[0m16:57:06.942314 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m16:57:06.945294 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_USER'
+[0m16:57:07.206470 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.3051825, "process_user_time": 0.627201, "process_kernel_time": 0.07208, "process_mem_max_rss": "98664448", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:57:07.213571 [debug] [MainThread]: Command `dbt debug` failed at 16:57:07.213103 after 0.31 seconds
+[0m16:57:07.214531 [debug] [MainThread]: Flushing usage events
+
+
+============================== 16:57:35.681837 | 5d708506-bf57-4f13-8619-93d7093629fe ==============================
+[0m16:57:35.681837 [info ] [MainThread]: Running with dbt=1.8.3
+[0m16:57:35.682565 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/albertosantinon/Documents/dev/accelerant/logs', 'version_check': 'True', 'profiles_dir': '/Users/albertosantinon/Documents/dev/accelerant', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug --connection', 'send_anonymous_usage_stats': 'False'}
+[0m16:57:35.691364 [info ] [MainThread]: dbt version: 1.8.3
+[0m16:57:35.691626 [info ] [MainThread]: python version: 3.12.1
+[0m16:57:35.691776 [info ] [MainThread]: python path: /Users/albertosantinon/Documents/dev/.venv/bin/python
+[0m16:57:35.691911 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m16:57:35.695063 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_USER'
+[0m16:57:35.696515 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.0493275, "process_user_time": 0.619332, "process_kernel_time": 0.083855, "process_mem_max_rss": "97959936", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:57:35.697891 [debug] [MainThread]: Command `dbt debug` failed at 16:57:35.697826 after 0.05 seconds
+[0m16:57:35.698099 [debug] [MainThread]: Flushing usage events
+
+
+============================== 17:00:40.670721 | bc6794bd-7c68-43ae-9d38-26cf35da44cb ==============================
+[0m17:00:40.670721 [info ] [MainThread]: Running with dbt=1.7.17
+[0m17:00:40.671614 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/albertosantinon/Documents/dev/accelerant/logs', 'profiles_dir': '/Users/albertosantinon/Documents/dev/accelerant', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m17:00:40.718951 [debug] [MainThread]: Set downloads directory='/var/folders/mg/ldj2j0m15qq54h1m8pscppqw0000gn/T/dbt-downloads-zn_tfmab'
+[0m17:00:40.719334 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:00:40.872177 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:00:40.873224 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:00:40.937115 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:00:40.949008 [info ] [MainThread]: Updating lock file in file path: /Users/albertosantinon/Documents/dev/accelerant/package-lock.yml
+[0m17:00:40.951359 [debug] [MainThread]: Set downloads directory='/var/folders/mg/ldj2j0m15qq54h1m8pscppqw0000gn/T/dbt-downloads-e4s9b4uv'
+[0m17:00:40.955525 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:00:41.383525 [info ] [MainThread]: Installed from version 1.1.1
+[0m17:00:41.383804 [info ] [MainThread]: Updated version available: 1.2.0
+[0m17:00:41.384015 [info ] [MainThread]: 
+[0m17:00:41.384187 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m17:00:41.386100 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.7470065, "process_user_time": 0.969931, "process_kernel_time": 0.135311, "process_mem_max_rss": "103907328", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:00:41.386558 [debug] [MainThread]: Command `dbt deps` succeeded at 17:00:41.386471 after 0.75 seconds
+[0m17:00:41.386831 [debug] [MainThread]: Flushing usage events
+
+
+============================== 17:04:20.172010 | d14f24ab-4312-47f1-babe-944d083a06b3 ==============================
+[0m17:04:20.172010 [info ] [MainThread]: Running with dbt=1.7.17
+[0m17:04:20.172936 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/albertosantinon/Documents/dev/accelerant', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/albertosantinon/Documents/dev/accelerant/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m17:04:20.239947 [debug] [MainThread]: Set downloads directory='/var/folders/mg/ldj2j0m15qq54h1m8pscppqw0000gn/T/dbt-downloads-tc8qw_hd'
+[0m17:04:20.240287 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:04:20.370981 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:04:20.371939 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:04:20.444511 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:04:20.451626 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:04:20.926149 [info ] [MainThread]: Installed from version 1.1.1
+[0m17:04:20.926499 [info ] [MainThread]: Updated version available: 1.2.0
+[0m17:04:20.926788 [info ] [MainThread]: 
+[0m17:04:20.927028 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m17:04:20.928450 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.78721094, "process_user_time": 0.952537, "process_kernel_time": 0.145607, "process_mem_max_rss": "103710720", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:04:20.928882 [debug] [MainThread]: Command `dbt deps` succeeded at 17:04:20.928789 after 0.79 seconds
+[0m17:04:20.929121 [debug] [MainThread]: Flushing usage events
